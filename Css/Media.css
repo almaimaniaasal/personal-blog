@@ -1,0 +1,47 @@
+@media(max-width: 800px) {
+	/*Home Media*/
+	.home-layout{
+		width: 100%;
+		grid-template-columns: 25% 50% 25%;
+		grid-auto-rows: minmax(50px, auto);
+		/*Assigning Grid Areas*/
+		grid-template-areas: "head head head"
+							 "article article article"
+							 ". section ."
+							 "foot foot foot";
+	}
+
+	.card {
+		flex-direction: column;
+		width: 80%;
+		height: auto;
+		padding-top: 10%; 
+	}
+	
+	.card-img {
+		width: 80%;
+		margin-left: 0;
+	}
+
+	.sidebar {
+		margin-top: 30%;
+		margin-bottom: 30%
+	}
+
+	/*Blog Post Media*/
+	.blog-layout {
+		width: 100%;
+		grid-template-columns: 25% 50% 25%;
+		grid-auto-rows: minmax(50px, auto);
+		/*Assigning Grid Areas*/
+		grid-template-areas: "head head head"
+							 "blog blog blog"
+							 ". section ."
+							 "foot foot foot";
+	}
+
+	.pl-img {
+		width: 20%;
+		height: 20%;
+	}
+}
